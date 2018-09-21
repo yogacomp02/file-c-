@@ -1,0 +1,96 @@
+#include <iostream>
+
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+using namespace std;
+
+int main(int argc, char** argv) {
+
+int menu;
+
+ float R1, R2, R3, RS, RP;
+
+           
+
+ cout<<"===========================================\n";
+
+ cout<<"| <<<<<  Program Rangkaian Listrik  >>>>> |\n";
+
+ cout<<"===========================================\n\n";
+
+ cout<<"Pilihan : \n";
+
+ cout<<"1. Hitung hambatan seri total (RS) \n";
+
+ cout<<"2. Hitung hambatan paralel total (RP)\n";
+
+ cout<<"3. Not Found \n\n";
+
+ cout<<"Masukkan pilihan Anda [1/2/3 ?] : ";
+
+ cin>>menu;
+
+
+ switch(menu){
+
+  case 1:
+
+   cout<<"Masukkan nilai resistor 1 (R1) : ";
+
+   cin>>R1;
+
+   cout<<"\nMasukkan nilai resistor 2 (R2) : ";
+
+   cin>>R2;
+
+   cout<<"\nMasukkan nilai resistor 3 (R3) : ";
+
+   cin>>R3;
+
+   RS=R1+R2+R3;
+
+   cout<<"Hambatan seri total = "<<RS<<" ohm";
+
+   break;
+
+  case 2:
+
+   cout<<"Masukkan nilai resistor 1 (R1) : ";
+
+   cin>>R1;
+
+   cout<<"\nMasukkan nilai resistor 2 (R2) : ";
+
+   cin>>R2;
+
+   cout<<"\nMasukkan nilai resistor 3 (R3) : ";
+
+   cin>>R3;
+
+   RP=(1/(1/R1+1/R2+1/R3));
+
+   cout<<"Hambatan paralel total = "<<RP<<" ohm";
+
+   break;
+
+  case 3 :
+
+   cout<<"Not Found ";
+
+   break;
+
+  default:
+
+   cout<<" ";
+
+   break;
+
+ }
+
+
+                return 0;
+
+}
+
+ 
