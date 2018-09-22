@@ -1,0 +1,17 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+int main(int argc, char** argv) {
+    int x, y, i;
+    int pangkat=1;
+    cout<<"Menghitung hasil pemangkatan\n";
+    cout<<"Tulis sebuah bilangan bulat : ";
+    cin>>x;
+    cout<<"Tulis Mau dipangkat berapa : "; 
+    cin>>y;
+    for(i=1;i<=y;i++)
+    pangkat*=x;
+    cout<<x<<" pangkat "<<y<<" = "<<pangkat<<endl;
+    return 0;
+}
