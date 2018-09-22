@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+int main(int argc, char** argv) {
+    int a,b;
+    cout<<"masukkan nilai pertama :";
+    cin>>a;
+    cout<<"masukkan nilai kedua :";
+    cin>>b;
+    if(a>b){
+        cout<<"angka terbesar :"<<a;
+      
+    }
+    else{
+        cout<<"angka terkecil :"<<b;
+    }
+    return 0;
+} 
